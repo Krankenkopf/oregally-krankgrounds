@@ -1,0 +1,101 @@
+html {
+
+}
+
+body {
+
+
+}
+
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.appShell {
+  position: fixed;
+  width: 1100px;
+  height: 100vh;
+  min-height: 600px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-decoration: none;
+}
+
+.dynBg::-webkit-scrollbar {
+  display: none;
+}
+
+.dynBg {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+/*  grid-auto-rows: 10vw;*/
+  font-size: calc(10px + 2vmin);
+  top: 0;
+  z-index: -2;
+/*  overflow: hidden;*/
+/*  color: white;*/
+/*  overflow-x: hidden;*/
+  position: fixed;
+/*  box-sizing: border-box;*/
+}
+
+.commonBg {
+  grid-template-columns: repeat(10, 1fr) !important;
+}
+
+.rectangle {
+  width: 9.4vw;
+  height: 9.4vw;
+  border: 0.301vw dashed black;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.scrollPage::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media all and (max-width: 1100px) {
+  .appShell{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .appShell{
+    width: 100%;
+  }
+  .rectangle {
+    width: 14.1vw;
+    height: 14.1vw;
+    border: 0.451vw dashed black;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .appShell{
+    width: 100%;
+  }
+  .rectangle {
+    width: 18.8vw;
+    height: 18.8vw;
+    border: 0.601vw dashed black;
+  }
+  .commonBg {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+

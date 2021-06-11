@@ -1,0 +1,40 @@
+.mainPageContainer {
+    color: #000;
+    background-color: #fffe;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-top: 0;
+    height: 100%;
+}
+
+.greetingPage {
+    padding-top: 250px;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 10vh 5fr 1fr;
+    grid-template-areas: "splash splash splash"
+                         "girl1 dog girl2"
+                         "text text text";
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img {
+    width: 20vw;
+    /*height: 80vh;*/
+    margin: auto auto 0;
+    object-fit: cover;
+    padding: 1vw;
+}
+
+.splash {
+    grid-area: splash;
+    font-size: calc(10px + 3vmin);
+    padding: 1vw;
+    margin: auto 0 0;
+    text-align: center;
+}
+
+

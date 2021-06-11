@@ -1,0 +1,115 @@
+.aboutPageContainer {
+    color: #000;
+    background-color: #202020;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-top: 0;
+    height: 100%;
+}
+
+.heroDesc {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Courier New", monospace;
+    font-weight: normal !important;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    top: 4vw;
+    right: 4vw;
+    z-index: 1000;
+   /* width: 58px;
+    height: 58px;*/
+    padding: 13px 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: none;
+    transition: all 250ms 0s;
+}
+
+.burger:hover {
+    transform: rotate(180deg);
+}
+
+.burgerLine__1 {
+    position: relative;
+    z-index: 5;
+    width: 22px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+    transition: all 200ms 0s;
+}
+
+.burger:hover .burgerLine__1 {
+    transform: rotate(90deg) translateX(9px);
+}
+
+.burgerLine__2 {
+    position: relative;
+    z-index: 5;
+    width: 22px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+}
+
+
+.burgerLine__3 {
+    position: relative;
+    z-index: 5;
+    width: 22px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+    transition: transform 200ms 0s, opacity 0ms 100ms;
+}
+
+.burger:hover .burgerLine__3 {
+    opacity: 0;
+    transform: rotate(90deg) translateX(-9px);
+}
+
+@media screen and (max-width: 767px) {
+    .burger {
+        display: block;
+    }
+
+}
+@media screen and (max-width: 479px) {
+    .burger {
+        display: block;
+        padding: 9px 12px;
+        cursor: pointer;
+    }
+    .burger:hover {
+        transform: none;
+    }
+    .burgerLine__1 {
+        width: 20px;
+        height: 2px;
+    }
+    .burger:hover .burgerLine__1 {
+        transform: none;
+    }
+    .burgerLine__2 {
+        width: 20px;
+        height: 2px;
+    }
+    .burgerLine__3 {
+        width: 20px;
+        height: 2px;
+    }
+    .burger:hover .burgerLine__3 {
+        opacity: 1;
+        transform: none;
+    }
+}
