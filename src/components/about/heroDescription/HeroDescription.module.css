@@ -1,0 +1,401 @@
+.heroDesc {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Courier New", monospace;
+    font-weight: normal !important;
+    z-index: 5;
+}
+
+.heroDesc h1 {
+    font-size: 40px;
+    /* -webkit-text-stroke: 1px #fff;*/
+}
+
+.heroDesc h2 {
+    font-size: 30px;
+}
+
+.heroDesc h3 {
+    font-size: 20px;
+}
+/*-------------------first string---------------------*/
+@media (prefers-reduced-motion: no-preference) {
+    .__h1 {
+        animation: __h1 1 1s cubic-bezier(.37, .05, .41, 1);
+    }
+    .__i1 {
+        animation: __i1 1 1s cubic-bezier(.37, .05, .41, 1);
+    }
+    .__a1 {
+        animation: __a1 1 1s cubic-bezier(.37, .05, .41, 1);
+    }
+    .__l1 {
+        animation: __l1 1 1s cubic-bezier(.37, .05, .41, 1);
+    }
+    .__l2 {
+        animation: __l2 1 1s cubic-bezier(.37, .05, .41, 1);
+    }
+    .__exc1 {
+        animation: __exc1 1 1s cubic-bezier(.37, .05, .41, 1);
+    }
+    @keyframes __h1 {
+        0% {
+            transform: translateX(1300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __i1 {
+        0% {
+            transform: translateX(-600px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __a1 {
+        0% {
+            transform: translateX(2300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __l1 {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __l2 {
+        0% {
+            transform: translateX(-600px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __exc1 {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+/*-------------------second string---------------------*/
+@media (prefers-reduced-motion: no-preference) {
+    .__i2 {
+
+        animation: __i2 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__apo1 {
+        animation: __apo1 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__m1 {
+        animation: __m1 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__r1 {
+        animation: __r1 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__o1 {
+        animation: __o1 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__m2 {
+        animation: __m2 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__a2 {
+        animation: __a2 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+    .__n1 {
+        animation: __n1 1 1s cubic-bezier(.37, .05, .41, 1) 1s;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes __i2 {
+        0% {
+            transform: translateX(-600px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __apo1 {
+        0% {
+            transform: translateX(1300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __m1 {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __r1 {
+        0% {
+            transform: translateX(2300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __o1 {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __m2 {
+        0% {
+            transform: translateX(-400px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __a2 {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __n1 {
+        0% {
+            transform: translateX(-1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+/*-------------------third string---------------------*/
+@media (prefers-reduced-motion: no-preference) {
+    .__f1 {
+        animation: __f1 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__r2 {
+        animation: __r2 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__o2 {
+        animation: __o2 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__n2 {
+        animation: __n2 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__t1 {
+        animation: __t1 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__e1 {
+        animation: __e1 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__n3 {
+        animation: __n3 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__d1 {
+        animation: __d1 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__d2 {
+        animation: __d2 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__e2 {
+        animation: __e2 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__v1 {
+        animation: __v1 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__e3 {
+        animation: __e3 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__l3 {
+        animation: __l3 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__o3 {
+        animation: __o3 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__p1 {
+        animation: __p1 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__e4 {
+        animation: __e4 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+    .__r3 {
+        animation: __r3 1 1s cubic-bezier(.37, .05, .41, 1) 2s;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes __f1 {
+        0% {
+            transform: translateX(-600px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __r2 {
+        0% {
+            transform: translateX(1300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __o2 {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __n2 {
+        0% {
+            transform: translateX(2300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __t1 {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __e1 {
+        0% {
+            transform: translateX(-400px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __n3 {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __d1 {
+        0% {
+            transform: translateX(-1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __d2 {
+        0% {
+            transform: translateX(1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __e2 {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __v1 {
+        0% {
+            transform: translateX(2300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __e3 {
+        0% {
+            transform: translateX(1300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __l3 {
+        0% {
+            transform: translateX(-600px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __o3 {
+        0% {
+            transform: translateX(-1000px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __p1 {
+        0% {
+            transform: translateX(2000px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __e4 {
+        0% {
+            transform: translateX(-600px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @keyframes __r3 {
+        0% {
+            transform: translateX(-1500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}

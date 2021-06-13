@@ -1,0 +1,96 @@
+.burger {
+    display: none;
+    position: fixed;
+    top: 4vw;
+    right: 4vw;
+    z-index: 1000;
+    /* width: 58px;
+     height: 58px;*/
+    padding: 13px 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: none;
+    transition: all 250ms 0s;
+}
+
+.burger:hover {
+    transform: rotate(180deg);
+}
+
+.burgerLine_1 {
+    position: relative;
+    z-index: 5;
+    width: 24px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+    transition: all 200ms 0s;
+}
+
+.burger:hover .burgerLine_1 {
+    transform: rotate(90deg) translateX(9px);
+}
+
+.burgerLine_2 {
+    position: relative;
+    z-index: 5;
+    width: 24px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+}
+
+.burgerLine_3 {
+    position: relative;
+    z-index: 5;
+    width: 24px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+    transition: transform 200ms 0s, opacity 0ms 100ms;
+}
+
+.burger:hover .burgerLine_3 {
+    opacity: 0;
+    transform: rotate(90deg) translateX(-9px);
+}
+
+@media screen and (max-width: 767px) {
+    .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .burger {
+        display: block;
+        padding: 9px 12px;
+        cursor: pointer;
+    }
+    .burger:hover {
+        transform: none;
+    }
+    .burgerLine_1 {
+        width: 20px;
+        height: 2px;
+    }
+    .burger:hover .burgerLine_1 {
+        transform: none;
+    }
+    .burgerLine_2 {
+        width: 20px;
+        height: 2px;
+    }
+    .burgerLine_3 {
+        width: 20px;
+        height: 2px;
+    }
+    .burger:hover .burgerLine_3 {
+        opacity: 1;
+        transform: none;
+    }
+}
+

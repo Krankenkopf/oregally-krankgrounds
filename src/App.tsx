@@ -47,7 +47,7 @@ const App = () => {
                         <ContentContainer scrollDistance={scrollDistance} setDynamicBg={setDynamicBg}/>
                         )}/>
                     <Route path={PATH.STORE} exact render={() => (<StoreContainer />)} />
-                    <Route path={PATH.ABOUT} exact render={() => (<About setBgType={setBgType}/>)} />
+                    <Route path={PATH.ABOUT} exact render={() => (<About scrollDistance={scrollDistance} setBgType={setBgType}/>)} />
                     <Footer />
                 </div>
                 <Background scrollDistance={scrollDistance} dynamicBg={dynamicBg} bgType={bgType}/>

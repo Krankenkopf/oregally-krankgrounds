@@ -1,115 +1,102 @@
 .aboutPageContainer {
     color: #000;
-    background-color: #202020;
+    background-color: #aa0000;
     border-radius: 1vw;
     padding: 1vw;
     margin-top: 0;
     height: 100%;
 }
 
-.heroDesc {
+.aboutHeader {
+    margin-top: -1vw;
+    background-color: #aa0000;
+    height: calc(58px + 7% + 1vw);
+    z-index: 1;
+
+}
+
+.aboutHeader div {
+    position: sticky;
+    height: 20px;
+    background-color: #aa0000;
+    box-shadow: 0 0 15px 15px #aa0000;
+    z-index: 50;
+}
+
+.section_1 {
+    padding: 0 5vw 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_2 {
+    padding: 0 5vw 0;
+
+}
+
+.section_2__title {
     color: #fff;
+    text-align: right;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: "Courier New", monospace;
     font-weight: normal !important;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 
-.burger {
-    display: none;
-    position: fixed;
-    top: 4vw;
-    right: 4vw;
-    z-index: 1000;
-   /* width: 58px;
-    height: 58px;*/
-    padding: 13px 18px;
-    border-radius: 50%;
-    background-color: #fff;
-    cursor: none;
-    transition: all 250ms 0s;
+.section_2__skillsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    perspective: 5000px;
+    perspective-origin: center 170px;
 }
 
-.burger:hover {
-    transform: rotate(180deg);
+.heroCarousel {
+    padding-top: 20px;
+    z-index: 10;
 }
 
-.burgerLine__1 {
-    position: relative;
-    z-index: 5;
-    width: 22px;
-    height: 4px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #111;
-    transition: all 200ms 0s;
-}
-
-.burger:hover .burgerLine__1 {
-    transform: rotate(90deg) translateX(9px);
-}
-
-.burgerLine__2 {
-    position: relative;
-    z-index: 5;
-    width: 22px;
-    height: 4px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #111;
-}
-
-
-.burgerLine__3 {
-    position: relative;
-    z-index: 5;
-    width: 22px;
-    height: 4px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #111;
-    transition: transform 200ms 0s, opacity 0ms 100ms;
-}
-
-.burger:hover .burgerLine__3 {
-    opacity: 0;
-    transform: rotate(90deg) translateX(-9px);
+.heroPhoto {
+    width: 400px;
+    margin: auto auto 0;
+    object-fit: cover;
+    box-shadow: 0 0 10px 5px black;
 }
 
 @media screen and (max-width: 767px) {
-    .burger {
-        display: block;
+    .section_1 {
+        justify-content: center;
     }
-
+    .section_2 {
+        justify-content: center;
+    }
+    .section_2__title {
+        text-align: center;
+        margin-bottom: 4vw;
+    }
+    .section_2__skillsContainer {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 479px) {
-    .burger {
-        display: block;
-        padding: 9px 12px;
-        cursor: pointer;
+    .section_1 {
+        justify-content: center;
     }
-    .burger:hover {
-        transform: none;
+    .section_2 {
+        justify-content: center;
     }
-    .burgerLine__1 {
-        width: 20px;
-        height: 2px;
+    .section_2__title {
+        text-align: center;
     }
-    .burger:hover .burgerLine__1 {
-        transform: none;
+    .heroCarousel {
+        text-align: center;
     }
-    .burgerLine__2 {
-        width: 20px;
-        height: 2px;
-    }
-    .burgerLine__3 {
-        width: 20px;
-        height: 2px;
-    }
-    .burger:hover .burgerLine__3 {
-        opacity: 1;
-        transform: none;
+    .heroPhoto {
+        width: 300px;
     }
 }
+
